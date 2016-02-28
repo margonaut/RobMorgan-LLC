@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+
+    <%= form_for @project do |f| %>
+      <%= f.label :Content %>
+		<%= f.bootsy_area :content,rows: 8, class: 'form-control', placeholder: "Project Content", editor_options: {alert_unsaved: false}%>
+    <% end %>
+  </div>
+</div>
